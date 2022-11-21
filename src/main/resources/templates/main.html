@@ -32,6 +32,7 @@
     </style>
 </th:block>
 
+<!--
 <div layout:fragment="content">
 
     <div id="carouselControls" class="carousel slide margin" data-ride="carousel">
@@ -42,19 +43,19 @@
         </div>
     </div>
 
-    <input type="hidden" name="searchQuery" th:value="${itemSearchDto.searchQuery}">
+   &lt;!&ndash; <input type="hidden" name="searchQuery" th:value="${itemSearchDto.searchQuery}">
     <div th:if="${not #strings.isEmpty(itemSearchDto.searchQuery)}" class="center">
         <p class="h3 font-weight-bold" th:text="${itemSearchDto.searchQuery} + '검색 결과'"></p>
-    </div>
+    </div>&ndash;&gt;
 
     <div class="row">
         <th:block th:each="item, status: ${items.getContent()}">
             <div class="col-md-4 margin">
                 <div class="card">
                     <a th:href="'/item/' +${item.id}" class="text-dark">
-                        <img th:src="${item.imgUrl}" class="card-img-top" th:alt="${item.itemNm}" height="400">
+                        <img th:src="${item.imgUrl}" class="card-img-top" th:alt="${item.itemName}" height="400">
                         <div class="card-body">
-                            <h4 class="card-title">[[${item.itemNm}]]</h4>
+                            <h4 class="card-title">[[${item.itemName}]]</h4>
                             <p class="card-text">[[${item.itemDetail}]]</p>
                             <h3 class="card-title text-danger">[[${item.price}]]원</h3>
                         </div>
@@ -86,4 +87,4 @@
         </ul>
     </div>
 
-</div>
+</div>-->
