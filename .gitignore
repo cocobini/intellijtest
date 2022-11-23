@@ -38,3 +38,6 @@ build/
 ### sec ###
 application.properties
 application.yml
+
+### README.md ###
+README.md
