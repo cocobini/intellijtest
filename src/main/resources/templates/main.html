@@ -32,7 +32,6 @@
     </style>
 </th:block>
 
-<!--
 <div layout:fragment="content">
 
     <div id="carouselControls" class="carousel slide margin" data-ride="carousel">
@@ -43,10 +42,10 @@
         </div>
     </div>
 
-   &lt;!&ndash; <input type="hidden" name="searchQuery" th:value="${itemSearchDto.searchQuery}">
+    <input type="hidden" name="searchQuery" th:value="${itemSearchDto.searchQuery}">
     <div th:if="${not #strings.isEmpty(itemSearchDto.searchQuery)}" class="center">
         <p class="h3 font-weight-bold" th:text="${itemSearchDto.searchQuery} + '검색 결과'"></p>
-    </div>&ndash;&gt;
+    </div>
 
     <div class="row">
         <th:block th:each="item, status: ${items.getContent()}">
@@ -87,4 +86,4 @@
         </ul>
     </div>
 
-</div>-->
+</div>
